@@ -1,9 +1,9 @@
 ---
-layout: post
-title: "Tạo truy xuất bằng  Cache-Augmented Generation (CAG)"
-description: ""
-date: 2025-02-15T00:00:00-00:00
+title: "Cache-Augmented Generation (CAG)"
+date: 2025-02-15
+categories:
 tags: "Large Language Model"
+author: Nguyen The Vu
 ---
 
 # Cache-Augmented Generation (CAG)
