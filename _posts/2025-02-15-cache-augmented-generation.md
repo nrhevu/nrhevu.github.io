@@ -46,7 +46,9 @@ Self-attention là một kỹ thuật siêu nổi tiếng trong lĩnh vực họ
 Giải thích theo góc nhìn toán học thì mục tiêu của self-attention sẽ là biến đổi token đầu vào thành context vector mà có thông tin của tất cả các token khác. Ví dụ như cụm từ "she poured coffee" thì mô hình sẽ phải tính toán ra 3 context vector tương ứng với các token (coi mỗi token là 1 từ). 
 
 Giá trị Attention sẽ được tính bằng công thức sau:
-$$ Attention(Q,W,K) = softmax(\frac{QK^T}{\sqrt{d_k}})V $$
+$$ 
+Attention(Q,W,K) = softmax(\frac{QK^T}{\sqrt{d_k}})V 
+$$
 Để giải thích công thức này một cách trực quan và dễ hiểu, ta sẽ đi vào 1 ví dụ: Trong hình bên dưới khi từ "poured" được xử lý, các bước sau sẽ được thực hiện:
 
 ![alt text](/assets/images/2025-02-09-cache-augmented-generation/attention.png)
