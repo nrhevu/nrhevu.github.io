@@ -4,6 +4,7 @@ date: 2025-02-15
 categories:
 tags: "Large Language Model"
 author: Nguyen The Vu
+math: true
 ---
 
 # Cache-Augmented Generation (CAG)
