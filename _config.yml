@@ -16,10 +16,10 @@ timezone:
 
 title: Nguyen The Vu # the main title
 
-tagline: AI Engineer|Data Scientist # it will display as the subtitle
+tagline: AI Engineer| Data Scientist # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Trang blog của Nguyễn Thế Vũ để chia sẻ những kiến thức và tâm sự 
+  Trang blog của Nguyễn Thế Vũ để chia sẻ kiến thức và tâm sự 
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
