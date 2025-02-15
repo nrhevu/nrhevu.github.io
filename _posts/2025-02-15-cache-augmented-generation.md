@@ -1,8 +1,8 @@
 ---
 title: "Cache-Augmented Generation (CAG)"
-date: 2025-02-15
-categories:
-tags: "Large Language Model"
+date: 2025-02-16
+categories: Sharing Knowledge
+tags: LLM
 author: Nguyen The Vu
 math: true
 ---
