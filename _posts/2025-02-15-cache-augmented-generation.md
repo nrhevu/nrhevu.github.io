@@ -7,7 +7,6 @@ author: Nguyen The Vu
 math: true
 ---
 
-# Cache-Augmented Generation (CAG)
 Để xây dựng một hệ thống ứng dụng **Large Language Model**, chắc hẳn chúng ta sẽ phải áp dụng một vài kỹ thuật để tăng cường khả năng của mô hình, điển hình nhất là sử dụng những kỹ thuật về tăng cường truy xuất RAG (**Retrieval Augmented Generation**). Vậy trước khi tìm hiểu về CAG, ta hãy xem qua RAG là gì, có điểm mạnh, điểm yếu là gì nhé.
 
 ## RAG là gì
