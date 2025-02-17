@@ -1,6 +1,6 @@
 ---
 title: "Cache-Augmented Generation (CAG)"
-date: 2025-02-17
+date: 2025-02-16
 categories: [Sharing Knowledge]
 tags: "LLM RAG CAG"
 author: Nguyen The Vu
