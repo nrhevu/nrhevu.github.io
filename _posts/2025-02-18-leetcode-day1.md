@@ -16,7 +16,8 @@ Medium
 Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
 The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
- 
+
+You must write an algorithm that runs in O(n) time and without using the division operation.
 
 Example 1:
 
@@ -47,24 +48,16 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        all_product = 1
-        have_zero = 0
-        for i in nums:
-            if i == 0:
-                have_zero += 1
-                continue
-            all_product *= i
+        result = [1] * len(nums)
+        current_product = 1
+        for i in range(len(nums) - 1, 0, -1):
+            current_product *= nums[i]
+            result[i-1] = current_product
 
-        result = []
-        for i in nums:
-            if have_zero > 1:
-                result.append(0)
-            elif i == 0:
-                result.append(all_product)
-            elif have_zero:
-                result.append(0)
-            else: 
-                result.append(all_product / i)
+        current_product = 1
+        for i in range(0, len(nums)):
+            result[i] *= current_product
+            current_product *= nums[i]
 
         return result
 ```
