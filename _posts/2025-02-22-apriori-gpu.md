@@ -1,5 +1,5 @@
 ---
-title: "GMiner: Tìm kiếm luật kết hợp Apriori sử dụng GPU"
+title: "GMiner: Tìm kiếm luật kết hợp Apriori sử dụng GPU (Phần 1)"
 date: 2025-02-21
 categories: [Sharing Knowledge]
 tags: "Apriori Gminer"
