@@ -47,6 +47,7 @@ GMiner là một phương pháp khai phá tập phổ biến dựa trên GPU, đ
 
 # Tài liệu tham khảo 
 [1] M. Hegland, “The apriori algorithm–a tutorial”, Mathematics and computation in imaging science and information processing, tr 209–262, 2007.
+
 [2] K. Chon, S.-H. Hwang, và M. Kim, “GMiner: A Fast GPU-based Frequent Itemset Mining Method for Large-scale Data”, Information Sciences, vol 439, tr , 2018, doi: 10.1016/j.ins.2018.01.046 .
 
 # To be continue
