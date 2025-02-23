@@ -41,12 +41,8 @@ Dưới đây là giải thích chi tiết từng bước:
     sẽ tìm những tập mục thường xuyên L-itemsets $F_{L}$ là những tập có
     độ hỗ trợ lớn hơn giá trị minsup.
 
-<!-- ![alt text](/assets/images/gminer/TFL.png) -->
-
-<p>
-    <img src="/assets/images/gminer/TFL.pn" alt>
-    <em>Thuật toán TFL</em>
-</p>
+![alt text](/assets/images/gminer/TFL.png)
+Thuật toán TFL
 
 ## **Hàm lõi (Kernel Function)**
 
@@ -124,11 +120,8 @@ hình vẽ dưới.
 -   Kết quả cuối cùng được ghi vào buffer hỗ trợ ( PSBuf ) trong GPU
     global memory.
 
-<p>
-    <img src="/assets/images/gminer/kernel.png" alt>
-    <em>Kernel Function</em>
-</p>
-
+![alt text](/assets/images/gminer/kernel.png)
+Kernel Function
 
 ## **Chiến lược "Hopping from the Intermediate Level" (HIL)**
 
@@ -196,10 +189,8 @@ Chiến lược HIL dựa trên ý tưởng:
 -   Kỹ thuật bitwise AND vẫn được áp dụng, nhưng với số phép toán ít hơn
     do các Fragment Blocks đã lưu trữ sẵn các kết quả trung gian.
 
-<p>
-    <img src="/assets/images/gminer/hil.png" alt>
-    <em>Thuật toán HIL</em>
-</p>
+![alt text](/assets/images/gminer/hil.png)
+Thuật toán HIL
 
 ## Khai thác tối ưu GPU
 
