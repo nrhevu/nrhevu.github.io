@@ -10,7 +10,7 @@ math: true
 ## **Chiến lược "Traversal from the First Level" (TFL)**
 
 Thuật toán TFL (Traversal from the First Level) được triển khai qua 7
-bước chính. Thuật toán được mô tả qua hình vẽ [\[tfl\]](#tfl){.ref}.
+bước chính. Thuật toán được mô tả qua hình vẽ dưới.
 Dưới đây là giải thích chi tiết từng bước:
 
 1.  Biến đổi tập mục được sinh ra thành dạng Relative Memory Address
@@ -41,12 +41,12 @@ Dưới đây là giải thích chi tiết từng bước:
     sẽ tìm những tập mục thường xuyên L-itemsets $F_{L}$ là những tập có
     độ hỗ trợ lớn hơn giá trị minsup.
 
-<figure>
-<p><img src="/assets/images/gminer/TFL.png" /></p>
-<figcaption><p>Thuật toán TFL</p></figcaption>
-</figure>
+<!-- ![alt text](/assets/images/gminer/TFL.png) -->
 
-[]{#tfl}
+<p>
+    <img src="/assets/images/gminer/TFL.pn" alt>
+    <em>Thuật toán TFL</em>
+</p>
 
 ## **Hàm lõi (Kernel Function)**
 
@@ -61,7 +61,7 @@ Function. Hàm Kernel có 2 chức năng
     threads trên cùng một GPU block.
 
 Kernel Function được thực hiện như sau và thể hiện qua
-[\[kernel\]](#kernel){.ref}.
+hình vẽ dưới.
 
 **Tham số đầu vào của Kernel Function**
 
@@ -124,12 +124,11 @@ Kernel Function được thực hiện như sau và thể hiện qua
 -   Kết quả cuối cùng được ghi vào buffer hỗ trợ ( PSBuf ) trong GPU
     global memory.
 
-<figure>
-<p><img src="/assets/images/gminer/kernel.png" style="height:50.0%" /></p>
-<figcaption><p>“Kernel Function”</p></figcaption>
-</figure>
+<p>
+    <img src="/assets/images/gminer/kernel.png" alt>
+    <em>Kernel Function</em>
+</p>
 
-[]{#kernel}
 
 ## **Chiến lược "Hopping from the Intermediate Level" (HIL)**
 
@@ -197,12 +196,10 @@ Chiến lược HIL dựa trên ý tưởng:
 -   Kỹ thuật bitwise AND vẫn được áp dụng, nhưng với số phép toán ít hơn
     do các Fragment Blocks đã lưu trữ sẵn các kết quả trung gian.
 
-<figure>
-<p><img src="/assets/images/gminer/hil.png" style="height:50.0%" /></p>
-<figcaption><p>Thuật toán HIL</p></figcaption>
-</figure>
-
-[]{#hil}
+<p>
+    <img src="/assets/images/gminer/hil.png" alt>
+    <em>Thuật toán HIL</em>
+</p>
 
 ## Khai thác tối ưu GPU
 
