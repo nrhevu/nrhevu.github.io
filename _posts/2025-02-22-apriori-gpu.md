@@ -1,6 +1,6 @@
 ---
 title: "GMiner: Tìm kiếm luật kết hợp Apriori sử dụng GPU (Phần 1)"
-date: 2025-02-21
+date: 2025-02-22
 categories: [Sharing Knowledge]
 tags: "Apriori Gminer"
 author: Nguyen The Vu
