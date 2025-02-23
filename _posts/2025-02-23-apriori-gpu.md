@@ -6,6 +6,7 @@ tags: "Apriori Gminer"
 author: Nguyen The Vu
 math: true
 ---
+Ở [phần trước](https://nrhevu.github.io/posts/apriori-gpu/) ta đã tìm hiểu về thuật toán Apriori trong tìm kiếm luật kết hợp, và tổng quan thuật toán Gminer. Bây giờ hãy cùng mình đi vào từng thành phần của thuật toán nhé.
 
 ## **Chiến lược "Traversal from the First Level" (TFL)**
 
