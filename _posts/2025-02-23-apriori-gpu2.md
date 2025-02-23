@@ -80,7 +80,7 @@ hình vẽ dưới.
     -   Số threads tối đa trong một GPU block.
 
 ** Các bước xử lý **\
-**1. Kiểm tra điều kiện xử lý**
+**Bước 1. Kiểm tra điều kiện xử lý**
 
 -   Nếu GPU block hiện tại không được gán bất kỳ tập mục ứng viên nào
     (dựa trên chỉ số ( doneIdx + BID )), hàm kernel sẽ kết thúc ngay lập
@@ -122,6 +122,7 @@ hình vẽ dưới.
     global memory.
 
 ![alt text](/assets/images/gminer/kernel.png)
+
 Kernel Function
 
 ## **Chiến lược "Hopping from the Intermediate Level" (HIL)**
@@ -134,8 +135,7 @@ Chiến lược HIL dựa trên ý tưởng:
 
 1.  **Chia nhỏ dữ liệu giao dịch**:
 
-    -   Dữ liệu được chia thành các khối nhỏ hơn gọi là **Fragment
-        Blocks**, mỗi khối đại diện cho một phần giao dịch nhỏ hơn trong
+    -   Dữ liệu được chia thành các khối nhỏ hơn gọi là **Fragment Blocks**, mỗi khối đại diện cho một phần giao dịch nhỏ hơn trong
         Transaction Block.
 
     -   Mỗi **Fragment Block** lưu trữ không chỉ các mục thường xuyên
@@ -149,10 +149,9 @@ Chiến lược HIL dựa trên ý tưởng:
 
 **Các bước thực hiện của chiến lược HIL:**
 
-1.  Chia nhỏ các Transaction Block thành Fragment Blocks
-
--   Mỗi **Transaction Block** ( $\text{TB}_{k}$ ) được chia thành nhiều
-    **Fragment Blocks** ( $\text{TB}_{k,l}$ ).
+**1.  Chia nhỏ các Transaction Block thành Fragment Blocks**
+-   Mỗi **Transaction Block** ( $TB_k$ ) được chia thành nhiều
+    **Fragment Blocks** ( $TB_{k,l}$ ).
 
 -   Một **Fragment Block** lưu trữ:
 
@@ -163,7 +162,7 @@ Chiến lược HIL dựa trên ý tưởng:
 -   Kích thước mỗi Fragment Block được xác định bởi tham số ( H ), số
     mục thường xuyên tối đa trong mỗi khối.
 
-2.  Xây dựng và lưu trữ các Fragment Blocks
+**2.  Xây dựng và lưu trữ các Fragment Blocks**
 
 -   Với mỗi Fragment Block:
 
@@ -174,7 +173,7 @@ Chiến lược HIL dựa trên ý tưởng:
 -   Kỹ thuật **nested-loop streaming** được sử dụng để tính toán nhanh
     các Fragment Blocks song song trên GPU.
 
-3.  Lựa chọn các Fragment Blocks cần thiết
+**3.  Lựa chọn các Fragment Blocks cần thiết**
 
 -   Tại mỗi cấp ( L ), chỉ lựa chọn các Fragment Blocks có liên quan đến
     tập ứng viên ( $C_{L}$ ).
@@ -182,7 +181,7 @@ Chiến lược HIL dựa trên ý tưởng:
 -   Điều này giảm đáng kể kích thước dữ liệu cần truyền từ main memory
     vào GPU memory.
 
-4.  Tính toán hỗ trợ (Support)
+**4.  Tính toán hỗ trợ (Support)**
 
 -   Sử dụng các Fragment Blocks đã chọn thay vì toàn bộ Transaction
     Block.
@@ -191,6 +190,7 @@ Chiến lược HIL dựa trên ý tưởng:
     do các Fragment Blocks đã lưu trữ sẵn các kết quả trung gian.
 
 ![alt text](/assets/images/gminer/hil.png)
+
 Thuật toán HIL
 
 ## Khai thác tối ưu GPU
