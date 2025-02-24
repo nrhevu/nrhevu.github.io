@@ -38,8 +38,8 @@ Dưới đây là giải thích chi tiết từng bước:
     mảng PSArray ở bộ nhớ chính.
 
 7.  Tổng hợp các độ hỗ trợ thành phần trong PSArray để tính toán ra độ
-    hỗ trợ của các tập mục thường xuyên $\sigma(x)$. Sau đó thuật toán
-    sẽ tìm những tập mục thường xuyên L-itemsets $F_{L}$ là những tập có
+    hỗ trợ của các tập mục thường xuyên $\sigma$. Sau đó thuật toán
+    sẽ tìm những tập mục thường xuyên L-itemsets $F_L$ là những tập có
     độ hỗ trợ lớn hơn giá trị minsup.
 
 ![alt text](/assets/images/gminer/TFL.png)
