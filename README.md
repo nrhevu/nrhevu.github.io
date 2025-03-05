@@ -41,3 +41,31 @@ This work is published under [MIT][mit] License.
 [chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
 [CD]: https://en.wikipedia.org/wiki/Continuous_deployment
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+
+
+# leetcode template
+"""
+---
+title: "LeetCode - Day 1"
+date: 2025-03-05
+categories: [LeetCode]
+tags: "LeetCode"
+author: Nguyen The Vu
+math: true
+---
+
+# Problem
+```
+
+```
+
+# Solution
+```python
+
+```
+
+# Submission
+```
+
+```
+"""
