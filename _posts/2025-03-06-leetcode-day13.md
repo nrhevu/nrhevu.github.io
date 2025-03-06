@@ -1,5 +1,5 @@
 ---
-title: "LeetCode - Day 1"
+title: "LeetCode - Day 13"
 date: 2025-03-05
 categories: [LeetCode]
 tags: "LeetCode"
