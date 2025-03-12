@@ -1,6 +1,6 @@
 ---
-title: "LeetCode - Day 17"
-date: 2025-03-10
+title: "LeetCode - Day 18"
+date: 2025-03-11
 categories: [LeetCode]
 tags: "LeetCode"
 author: Nguyen The Vu
